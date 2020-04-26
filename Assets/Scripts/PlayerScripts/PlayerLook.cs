@@ -14,10 +14,12 @@ public class PlayerLook : MonoBehaviour
     //Create the variable for the mouse sensitivity:
     [SerializeField] private float mouseSensitivity;
 
+
     //Create variables to limit the rotation of the camera 
-    private float xClamp; 
+    private float xClamp;
 
-
+    //Create an object to hold the characters/player tranform body
+    [SerializeField] private Transform playerBody;
 
     // Start is called before the first frame update
     void Start()
@@ -63,7 +65,10 @@ public class PlayerLook : MonoBehaviour
         }
 
         //Now rotate the camera
-        transform.Rotate(-transform.right * mY);
+        transform.Rotate(Vector3.left * mY);
+
+        //Rotate the player body
+        playerBody.Rotate(Vector3.up * mX);
 
 
     }//End of CameraRotation
