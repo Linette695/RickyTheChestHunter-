@@ -241,7 +241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150761272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.9, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1565453394}
@@ -513,6 +513,7 @@ GameObject:
   - component: {fileID: 1565453391}
   - component: {fileID: 1565453395}
   - component: {fileID: 1565453396}
+  - component: {fileID: 1565453397}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -629,6 +630,22 @@ MonoBehaviour:
   horizInputName: Horizontal
   verInputName: Vertical
   speed: 6
+--- !u!54 &1565453397
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565453390}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &1746989660
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,7 +825,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998541176}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.66200227, z: -0, w: 0.7495019}
   m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 99, y: 1, z: 62}
   m_Children:
@@ -817,4 +834,4 @@ Transform:
   - {fileID: 1746989664}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 82.906006, z: 0}

@@ -64,7 +64,7 @@ public class PlayerLook : MonoBehaviour
             ClampXRotationToValue(270.0f);
         }
 
-        //Now rotate the camera
+        //Now rotate the camera //MIGHT GET RIDOFF THIS FOR YAXIS LOOKING
         transform.Rotate(Vector3.left * mY);
 
         //Rotate the player body
