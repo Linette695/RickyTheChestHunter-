@@ -14,6 +14,12 @@ public class PlayerMove : MonoBehaviour
     //Create variable for the character speed
     [SerializeField] private float speed;
 
+    //Create variables for jumping
+    [SerializeField] private AnimationCurve jumpFallOff;
+    [SerializeField] private float multiplier;
+    [SerializeField] private KeyCode jumpKey;
+    private bool isJumping; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +30,7 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         Movement();
+        jumpInput();
     }
 
     private void Awake()
@@ -44,6 +51,27 @@ public class PlayerMove : MonoBehaviour
         charContr.SimpleMove(fowardMovement + rightMovement);
     }//End of Movement method
 
+    private void jumpInput() {
 
+        if (Input.GetKeyDown(jumpKey) && !isJumping) {
+            isJumping = true;
+            StartCoroutine(jumpEvent());
 
+        }
+    }//End of jumpInput method
+
+    private IEnumerator jumpEvent() {
+        charContr.slopeLimit = 90.0f;
+        float timeOnAir = 0.0f; //Will hold the time the character has been on the air
+
+        do {
+            float force = jumpFallOff.Evaluate(timeOnAir);
+            charContr.Move(Vector3.up * force * multiplier * Time.deltaTime);
+            timeOnAir += Time.deltaTime;
+            yield return null;
+        } while (!charContr.isGrounded && charContr.collisionFlags != CollisionFlags.Above);
+
+        charContr.slopeLimit = 45.0f;
+        isJumping = false;
+    }//End of jumpEvent
 }//End of PlayerMove Class
