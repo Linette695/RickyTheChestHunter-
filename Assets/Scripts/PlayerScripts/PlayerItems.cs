@@ -1,14 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerItems : MonoBehaviour
 {
     public Rigidbody playerRB;     //To hold the player's rigid body
+    public Text turqCount;         //The UI Text object to hold curr number of turq gems
 
     //Items to keep track of
     private int currentTurqGems = 0;
-    private
+    
 
 
 
@@ -30,7 +32,7 @@ public class PlayerItems : MonoBehaviour
         {
             currentTurqGems += 1;
             Destroy(col.gameObject);
-
+            turqCount.text = currentTurqGems.ToString();
 
         }
 
