@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMove : MonoBehaviour
 {
     //Create variables for the horizontal and vertical movement input
@@ -74,4 +75,6 @@ public class PlayerMove : MonoBehaviour
         charContr.slopeLimit = 45.0f;
         isJumping = false;
     }//End of jumpEvent
+
+
 }//End of PlayerMove Class
