@@ -17,7 +17,7 @@ public class LastInstructionsTrigger : MonoBehaviour
         if (col.gameObject.tag == "Character")
         {
            
-                bannerText.text = "Remember: as the GEM HUNTER your objective is to collect all of the keys to unlock the gem chests." +
+                bannerText.text = "You are the GEM HUNTER \n Objective: Collect all the keys to unlock the GEM CHESTS." +
                     "\n GOOD LUCK!";
 
         }

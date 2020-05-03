@@ -18,7 +18,7 @@ public class CollectInstructionsTrigger : MonoBehaviour
         if (col.gameObject.tag == "Character")
         {
            
-                bannerText.text = "Collect items by walking through them";
+                bannerText.text = "COLLECT items by walking through them";
 
         }
 
