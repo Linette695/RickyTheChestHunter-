@@ -7,10 +7,14 @@ public class PlayerItems : MonoBehaviour
 {
     public Rigidbody playerRB;     //To hold the player's rigid body
     public Text turqCount;         //The UI Text object to hold curr number of turq gems
+    public Text goldCount;         //The UI Text object to hold curr number of gold keys
+    public Text brownCount;         //The UI Text object to hold curr number of brown keys
 
     //Items to keep track of
     private int currentTurqGems = 0;
-    
+    private int currentGoldKeys = 0;
+    private int currentBrownKeys = 0;
+
 
 
 
@@ -33,6 +37,19 @@ public class PlayerItems : MonoBehaviour
             currentTurqGems += 1;
             Destroy(col.gameObject);
             turqCount.text = currentTurqGems.ToString();
+
+        }
+        else if (col.gameObject.CompareTag("GoldKey")) {
+            currentGoldKeys += 1;
+            Destroy(col.gameObject);
+            goldCount.text = currentGoldKeys.ToString();
+
+        }
+        else if (col.gameObject.CompareTag("WoodKey"))
+        {
+            currentBrownKeys += 1;
+            Destroy(col.gameObject);
+            brownCount.text = currentBrownKeys.ToString();
 
         }
 

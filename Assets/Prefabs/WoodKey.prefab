@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5538084346380614144}
   - component: {fileID: 3566917845917220918}
   - component: {fileID: 7114761118336040143}
-  - component: {fileID: 1984426969882045617}
-  - component: {fileID: 1984426969882045616}
+  - component: {fileID: 8296172669313958687}
+  - component: {fileID: 8296172669313958686}
   m_Layer: 0
   m_Name: WoodKey
   m_TagString: WoodKey
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 8827164697187584019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.961532, y: 3.41, z: -24.68}
-  m_LocalScale: {x: 36, y: 38, z: 14}
+  m_LocalScale: {x: 1.1053541, y: 37.1574, z: 0.23333335}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!54 &1984426969882045617
+--- !u!54 &8296172669313958687
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,7 +98,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!136 &1984426969882045616
+--- !u!136 &8296172669313958686
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,7 +108,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.0103506865
-  m_Height: 0.06881594
+  m_Radius: 0.014236617
+  m_Height: 0.068815924
   m_Direction: 1
-  m_Center: {x: -0.00035068666, y: -0.017038288, z: -2.9565738e-16}
+  m_Center: {x: -0.00035068693, y: -0.017038286, z: 0.0022036007}
