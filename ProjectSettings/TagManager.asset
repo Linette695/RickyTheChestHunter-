@@ -10,6 +10,8 @@ TagManager:
   - Character
   - JumpTrigger
   - TurnTriggerArea
+  - WoodKey
+  - GoldKey
   layers:
   - Default
   - TransparentFX

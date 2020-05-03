@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8827164697187584019
+--- !u!1 &7106399941629306486
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5538084346380614144}
-  - component: {fileID: 3566917845917220918}
-  - component: {fileID: 7114761118336040143}
-  - component: {fileID: 1984426969882045617}
-  - component: {fileID: 1984426969882045616}
+  - component: {fileID: 6108104578815562853}
+  - component: {fileID: 2999219778586029651}
+  - component: {fileID: 8837143378173481642}
+  - component: {fileID: 1278718889912315184}
+  - component: {fileID: 1278718889912315151}
   m_Layer: 0
-  m_Name: WoodKey
-  m_TagString: WoodKey
+  m_Name: GoldKey
+  m_TagString: GoldKey
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &5538084346380614144
+--- !u!4 &6108104578815562853
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8827164697187584019}
+  m_GameObject: {fileID: 7106399941629306486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.961532, y: 3.41, z: -24.68}
-  m_LocalScale: {x: 36, y: 38, z: 14}
+  m_LocalPosition: {x: 10.4, y: 2.42, z: -24.6}
+  m_LocalScale: {x: 10, y: 70, z: 11.8781595}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3566917845917220918
+--- !u!33 &2999219778586029651
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8827164697187584019}
-  m_Mesh: {fileID: -2228417370725966487, guid: bb159716d40456e47af77f561c29f28c, type: 3}
---- !u!23 &7114761118336040143
+  m_GameObject: {fileID: 7106399941629306486}
+  m_Mesh: {fileID: -5495902117074765545, guid: ead3dcfe61f1187419c3c7c1cf691062, type: 3}
+--- !u!23 &8837143378173481642
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8827164697187584019}
+  m_GameObject: {fileID: 7106399941629306486}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,8 +60,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 7209840038725905457, guid: bb159716d40456e47af77f561c29f28c, type: 3}
-  - {fileID: -8542313713096554546, guid: bb159716d40456e47af77f561c29f28c, type: 3}
+  - {fileID: -8542313713096554546, guid: ead3dcfe61f1187419c3c7c1cf691062, type: 3}
+  - {fileID: -4162997176170531862, guid: ead3dcfe61f1187419c3c7c1cf691062, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,13 +82,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!54 &1984426969882045617
+--- !u!54 &1278718889912315184
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8827164697187584019}
+  m_GameObject: {fileID: 7106399941629306486}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -98,17 +98,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!136 &1984426969882045616
+--- !u!136 &1278718889912315151
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8827164697187584019}
+  m_GameObject: {fileID: 7106399941629306486}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.0103506865
-  m_Height: 0.06881594
+  m_Radius: 0.05393379
+  m_Height: 0.036522023
   m_Direction: 1
-  m_Center: {x: -0.00035068666, y: -0.017038288, z: -2.9565738e-16}
+  m_Center: {x: 0.000120466946, y: 0.005459559, z: 0.00039424445}
