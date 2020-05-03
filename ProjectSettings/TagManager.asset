@@ -8,6 +8,8 @@ TagManager:
   - TurqBall
   - Screen
   - Character
+  - JumpTrigger
+  - TurnTriggerArea
   layers:
   - Default
   - TransparentFX
