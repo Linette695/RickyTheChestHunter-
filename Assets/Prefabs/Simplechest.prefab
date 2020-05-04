@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 8296172669020081561}
   - component: {fileID: 8296172669020081560}
   - component: {fileID: 8296172669020081562}
+  - component: {fileID: 6019288708011080774}
   m_Layer: 0
   m_Name: Simplechest
   m_TagString: GemChest
@@ -267,6 +268,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.56143, y: 3.215467, z: 4.225131}
   m_Center: {x: -4.854909, y: 1.107734, z: 0}
+--- !u!114 &6019288708011080774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2353449828454379988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdfec28a319ceac4b981a6ce34e88115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impAnimation: {fileID: 7143424867482156636}
+  numKeys: {fileID: 0}
+  keysNeeded: 1
+  nextScene: 1
 --- !u!1 &7577673539460634407
 GameObject:
   m_ObjectHideFlags: 0

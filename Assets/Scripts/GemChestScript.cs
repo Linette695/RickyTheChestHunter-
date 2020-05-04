@@ -6,8 +6,9 @@ using UnityEngine.UI;
 
 public class GemChestScript : MonoBehaviour
 {
-    public Animator animator;
-    public GameObject squareTrigger;
+   
+    public Animation impAnimation;
+    
 
     public Text numKeys;    //Displayed integer on canvas (the count the player can see)
     public int keysNeeded;  //To hold the number of keys needed for this level's chest
@@ -36,15 +37,16 @@ public class GemChestScript : MonoBehaviour
 
     }
 
-    private void openChest(string direction)
+    private void openChest(string trig)
     {
-        
-        animator.SetTrigger(direction);
+        impAnimation.Play("ChestOpen");
+       
+
         StartCoroutine(Helper());
     }
 
    IEnumerator Helper() {
-        yield return new WaitForSeconds(0.30f);
+        yield return new WaitForSeconds(2.0f);
         switchScenes(nextScene);
 
 
