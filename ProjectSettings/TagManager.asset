@@ -12,6 +12,7 @@ TagManager:
   - TurnTriggerArea
   - WoodKey
   - GoldKey
+  - GemChest
   layers:
   - Default
   - TransparentFX
