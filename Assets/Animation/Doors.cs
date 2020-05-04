@@ -32,7 +32,7 @@ public class Doors : MonoBehaviour
     {
         if (col.gameObject.tag == "Character"){    
             turqDoorOpen = true;
-            doors("openChestTrigger");
+            doors("TurqOpen");
            
 
         }
