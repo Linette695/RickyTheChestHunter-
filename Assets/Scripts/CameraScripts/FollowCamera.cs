@@ -69,9 +69,9 @@ public class FollowCamera : MonoBehaviour
         //Set the target position
         targetPosit = charactOffset + follow.up * distUp - follow.forward * distAway; //Using the follow transform calculate the target position
         //For Debugging so we can see it
-        Debug.DrawRay(follow.position, Vector3.up * distUp, Color.red);
-        Debug.DrawRay(follow.position, -1f * follow.forward * distAway, Color.blue);
-        Debug.DrawLine(follow.position, targetPosit, Color.magenta);
+        //Debug.DrawRay(follow.position, Vector3.up * distUp, Color.red);
+        //Debug.DrawRay(follow.position, -1f * follow.forward * distAway, Color.blue);
+        //Debug.DrawLine(follow.position, targetPosit, Color.magenta);
 
         //Compensate for wall bumping
         compensationForWalls(charactOffset, ref targetPosit);
@@ -86,14 +86,14 @@ public class FollowCamera : MonoBehaviour
 
 
     private void compensationForWalls(Vector3 fromObj, ref Vector3 toTarget) {
-        Debug.DrawLine(fromObj, toTarget, Color.cyan);
+       // Debug.DrawLine(fromObj, toTarget, Color.cyan);
 
         
         RaycastHit wallHit = new RaycastHit();
 
         //IF wall is hit
         if (Physics.Linecast(fromObj, toTarget, out wallHit)) {
-            Debug.DrawRay(wallHit.point, Vector3.left, Color.red);
+            //Debug.DrawRay(wallHit.point, Vector3.left, Color.red);
             toTarget = new Vector3(wallHit.point.x, toTarget.y, wallHit.point.z);
         }
 

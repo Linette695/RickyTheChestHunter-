@@ -3477,7 +3477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1199328101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4583,7 +4583,7 @@ PrefabInstance:
     - target: {fileID: 6108104578815562853, guid: 805a1b21411324a49b2d0290daacd08f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6108104578815562853, guid: 805a1b21411324a49b2d0290daacd08f,
         type: 3}
@@ -4593,7 +4593,7 @@ PrefabInstance:
     - target: {fileID: 6108104578815562853, guid: 805a1b21411324a49b2d0290daacd08f,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6108104578815562853, guid: 805a1b21411324a49b2d0290daacd08f,
         type: 3}
@@ -4608,7 +4608,7 @@ PrefabInstance:
     - target: {fileID: 6108104578815562853, guid: 805a1b21411324a49b2d0290daacd08f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6108104578815562853, guid: 805a1b21411324a49b2d0290daacd08f,
         type: 3}
