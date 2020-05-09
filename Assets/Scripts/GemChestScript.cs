@@ -55,6 +55,7 @@ public class GemChestScript : MonoBehaviour
 
     public void switchScenes(int x)
     {
+        
         Debug.Log("You've changed scenes to: " + x);
         SceneManager.LoadScene(x);
     }//End of switchScenes
