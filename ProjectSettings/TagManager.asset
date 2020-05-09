@@ -13,6 +13,7 @@ TagManager:
   - WoodKey
   - GoldKey
   - GemChest
+  - BackGroundMusic
   layers:
   - Default
   - TransparentFX

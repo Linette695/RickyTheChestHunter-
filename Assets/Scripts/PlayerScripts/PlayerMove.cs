@@ -19,7 +19,10 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private AnimationCurve jumpFallOff;
     [SerializeField] private float multiplier;
     [SerializeField] private KeyCode jumpKey;
-    private bool isJumping; 
+    private bool isJumping;
+
+    //Sound Clip
+    public AudioSource jumpSound;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +35,11 @@ public class PlayerMove : MonoBehaviour
     {
         Movement();
         jumpInput();
+
+       /* if (charContr.isGrounded == true && charContr.velocity.magnitude > 2f) {
+            walkSound.Play();
+        }*/
+
     }
 
     private void Awake()
@@ -56,6 +64,7 @@ public class PlayerMove : MonoBehaviour
 
         if (Input.GetKeyDown(jumpKey) && !isJumping) {
             isJumping = true;
+            jumpSound.Play();
             StartCoroutine(jumpEvent());
 
         }
