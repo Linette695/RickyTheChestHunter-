@@ -41,6 +41,7 @@ public class PauseMenuController : MonoBehaviour
 
     public void switchScenes(int x)
     {
+        
         EventSystem.current.SetSelectedGameObject(null);
         Debug.Log("You've changed scenes to: " + x);
         SceneManager.LoadScene(x);
