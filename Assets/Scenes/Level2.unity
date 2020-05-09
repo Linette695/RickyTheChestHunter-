@@ -394,6 +394,11 @@ PrefabInstance:
       propertyPath: jumpSound
       value: 
       objectReference: {fileID: 409812559}
+    - target: {fileID: 8296172667537782054, guid: c3de92583aa08af4788a6a188995135c,
+        type: 3}
+      propertyPath: characAnim
+      value: 
+      objectReference: {fileID: 1929183062}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3de92583aa08af4788a6a188995135c, type: 3}
 --- !u!1 &261729796
@@ -3743,6 +3748,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922268818}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1929183061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7808806595249324433, guid: c3de92583aa08af4788a6a188995135c,
+    type: 3}
+  m_PrefabInstance: {fileID: 100705378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1929183062
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929183061}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9027e44e12aa2d44b8a2b1e7b345c1da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1946147902
 GameObject:
   m_ObjectHideFlags: 0
@@ -4176,6 +4206,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   multiplier: 10
   jumpKey: 32
+  characAnim: {fileID: 0}
   jumpSound: {fileID: 0}
 --- !u!143 &2110601379
 CharacterController:

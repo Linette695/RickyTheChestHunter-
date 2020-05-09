@@ -538,6 +538,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &120179083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7808806595249324433, guid: c3de92583aa08af4788a6a188995135c,
+    type: 3}
+  m_PrefabInstance: {fileID: 870785870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &120179085
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120179083}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9027e44e12aa2d44b8a2b1e7b345c1da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &159124159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2704,6 +2729,11 @@ PrefabInstance:
       propertyPath: jumpSound
       value: 
       objectReference: {fileID: 2018988848}
+    - target: {fileID: 8296172667537782054, guid: c3de92583aa08af4788a6a188995135c,
+        type: 3}
+      propertyPath: characAnim
+      value: 
+      objectReference: {fileID: 120179085}
     - target: {fileID: 8296172667537782057, guid: c3de92583aa08af4788a6a188995135c,
         type: 3}
       propertyPath: m_CollisionDetection
@@ -6006,6 +6036,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   multiplier: 10
   jumpKey: 32
+  characAnim: {fileID: 0}
   jumpSound: {fileID: 0}
 --- !u!54 &1565453397
 Rigidbody:

@@ -760,6 +760,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   multiplier: 10
   jumpKey: 32
+  characAnim: {fileID: 0}
   jumpSound: {fileID: 0}
 --- !u!143 &283134470
 CharacterController:
@@ -923,7 +924,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'WELCOME GEM HUNTER!
+  m_Text: 'WELCOME CHEST HUNTER!
 
     Use Arrow Keys to move'
 --- !u!222 &399788380
@@ -1673,6 +1674,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807960730}
   m_CullTransparentMesh: 0
+--- !u!1 &814647238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7808806595249324433, guid: c3de92583aa08af4788a6a188995135c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1546113483734635641}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &814647242
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814647238}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9027e44e12aa2d44b8a2b1e7b345c1da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &862402146
 GameObject:
   m_ObjectHideFlags: 0
@@ -2700,6 +2726,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4546518262486062733, guid: c3de92583aa08af4788a6a188995135c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546518262486062733, guid: c3de92583aa08af4788a6a188995135c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546518262486062733, guid: c3de92583aa08af4788a6a188995135c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546518262486062733, guid: c3de92583aa08af4788a6a188995135c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546518262486062733, guid: c3de92583aa08af4788a6a188995135c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546518262486062733, guid: c3de92583aa08af4788a6a188995135c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5768639206419321678, guid: c3de92583aa08af4788a6a188995135c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2759,6 +2815,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827353378041878720, guid: c3de92583aa08af4788a6a188995135c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827353378041878720, guid: c3de92583aa08af4788a6a188995135c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
       objectReference: {fileID: 0}
     - target: {fileID: 8296172667537782053, guid: c3de92583aa08af4788a6a188995135c,
         type: 3}
@@ -2840,6 +2906,16 @@ PrefabInstance:
       propertyPath: jumpSound
       value: 
       objectReference: {fileID: 685218300}
+    - target: {fileID: 8296172667537782054, guid: c3de92583aa08af4788a6a188995135c,
+        type: 3}
+      propertyPath: characAnim
+      value: 
+      objectReference: {fileID: 814647242}
+    - target: {fileID: 8296172667537782057, guid: c3de92583aa08af4788a6a188995135c,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3de92583aa08af4788a6a188995135c, type: 3}
 --- !u!4 &5006512735785773066 stripped

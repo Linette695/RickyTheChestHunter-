@@ -21,13 +21,17 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private KeyCode jumpKey;
     private bool isJumping;
 
+    //Animator to animate robot
+    public Animator characAnim;
+   
+
     //Sound Clip
     public AudioSource jumpSound;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -49,6 +53,8 @@ public class PlayerMove : MonoBehaviour
 
     private void Movement()
     {
+        
+        
         //Obtain the input values for the movement in veritcal and horizontal axis 
         float verticalInput = Input.GetAxis(verInputName) * speed;
         float horizontalInput = Input.GetAxis(horizInputName) * speed;
@@ -56,8 +62,24 @@ public class PlayerMove : MonoBehaviour
         Vector3 fowardMovement = transform.forward * verticalInput;
         Vector3 rightMovement = transform.right * horizontalInput;
 
-        //Actually move the character 
-        charContr.SimpleMove(fowardMovement + rightMovement);
+       
+        float horizInput = Input.GetAxis("Horizontal");
+        float verticInput = Input.GetAxis("Vertical");
+        if (horizInput > 0f || verticInput > 0f)
+        {
+            characAnim.SetBool("Walking", true);
+        }
+        else if (horizInput < 0f || verticInput < 0f)
+        {
+            characAnim.SetBool("Walking", true);
+        }
+        else {
+            characAnim.SetBool("Walking", false);
+        }
+
+
+            //Actually move the character 
+            charContr.SimpleMove(fowardMovement + rightMovement);
     }//End of Movement method
 
     private void jumpInput() {
