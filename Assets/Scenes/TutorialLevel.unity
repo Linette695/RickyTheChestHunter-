@@ -4109,5 +4109,15 @@ PrefabInstance:
       propertyPath: numKeys
       value: 
       objectReference: {fileID: 50203650}
+    - target: {fileID: 5209486179127552638, guid: 7f05072ba1a095742937ca80ea4fc12f,
+        type: 3}
+      propertyPath: instrPanel
+      value: 
+      objectReference: {fileID: 1300431125}
+    - target: {fileID: 5209486179127552638, guid: 7f05072ba1a095742937ca80ea4fc12f,
+        type: 3}
+      propertyPath: message
+      value: 
+      objectReference: {fileID: 399788379}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f05072ba1a095742937ca80ea4fc12f, type: 3}

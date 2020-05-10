@@ -422,7 +422,7 @@ PrefabInstance:
     - target: {fileID: 6108104578815562853, guid: 805a1b21411324a49b2d0290daacd08f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.1
+      value: 44.8
       objectReference: {fileID: 0}
     - target: {fileID: 6108104578815562853, guid: 805a1b21411324a49b2d0290daacd08f,
         type: 3}
@@ -432,7 +432,7 @@ PrefabInstance:
     - target: {fileID: 6108104578815562853, guid: 805a1b21411324a49b2d0290daacd08f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -41.7
+      value: -23
       objectReference: {fileID: 0}
     - target: {fileID: 6108104578815562853, guid: 805a1b21411324a49b2d0290daacd08f,
         type: 3}
@@ -689,7 +689,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 71c15b9053a71924e9310cd4e7cc8380, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1110,7 +1110,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 71c15b9053a71924e9310cd4e7cc8380, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1675,7 +1675,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 71c15b9053a71924e9310cd4e7cc8380, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4170,6 +4170,16 @@ PrefabInstance:
       propertyPath: nextScene
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5209486179127552638, guid: 7f05072ba1a095742937ca80ea4fc12f,
+        type: 3}
+      propertyPath: message
+      value: 
+      objectReference: {fileID: 871453352}
+    - target: {fileID: 5209486179127552638, guid: 7f05072ba1a095742937ca80ea4fc12f,
+        type: 3}
+      propertyPath: instrPanel
+      value: 
+      objectReference: {fileID: 1944275543}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f05072ba1a095742937ca80ea4fc12f, type: 3}
 --- !u!1 &1924126164
@@ -4236,7 +4246,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 71c15b9053a71924e9310cd4e7cc8380, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4375,7 +4385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1944275544
 RectTransform:
   m_ObjectHideFlags: 0

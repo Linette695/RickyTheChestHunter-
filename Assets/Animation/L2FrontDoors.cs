@@ -31,6 +31,8 @@ public class L2FrontDoors : MonoBehaviour
 
     }
 
+  
+
     private void doors(string direction)
     {
         animator.SetTrigger(direction);

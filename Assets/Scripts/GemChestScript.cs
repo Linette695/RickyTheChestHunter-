@@ -11,9 +11,10 @@ public class GemChestScript : MonoBehaviour
     
 
     public Text numKeys;    //Displayed integer on canvas (the count the player can see)
+    public Text message;    //Use to tell player messages
     public int keysNeeded;  //To hold the number of keys needed for this level's chest
     public int nextScene;   //To indicate the next scene loaded after the chest is opened
-
+    public GameObject instrPanel; //To hold the panel to display messages
     private int numOfKeys;  //Will hold the number of keys player has collected in int form
     private bool chestOpen; //To keep track if chest has been opened
    
@@ -26,15 +27,26 @@ public class GemChestScript : MonoBehaviour
     private void OnTriggerEnter(Collider col)
     {
         numOfKeys = int.Parse(numKeys.text);    //Convert to integer to get number of keys collected
-        if (col.gameObject.tag == "Character" &&  numOfKeys == keysNeeded)
+        if (col.gameObject.tag == "Character" && numOfKeys == keysNeeded)
         {
             chestOpen = true;
             openChest("chestOpen");
-           
-
 
         }
+        else if(col.gameObject.tag == "Character"  && numOfKeys != keysNeeded) {
+            message.text = "LOCKED \n " + keysNeeded + "  key(s) needed";
+        
+        }
 
+    }
+
+    private void OnTriggerExit(Collider col)
+    {
+        if (col.gameObject.tag == "Character" && numOfKeys != keysNeeded)
+        {
+            message.text = " ";
+
+        }
     }
 
     private void openChest(string trig)
